@@ -1033,3 +1033,7 @@ compaction_large_partition_warning_threshold_mb: 100
 gc_warn_threshold_in_ms: 1000
 
 #foo
+#(Default: true) This setting has been removed from default configuration.
+#It causes new (non-seed) nodes migrate the right data to themselves automatically.
+#When initializing a fresh cluster without data, add auto_bootstrap: false.
+auto_bootstrap: false
