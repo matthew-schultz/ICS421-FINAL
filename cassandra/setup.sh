@@ -3,5 +3,5 @@ echo "deb http://www.apache.org/dist/cassandra/debian 39x main" | sudo tee -a /e
 curl https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install -y cassandra
-# sudo sh -c 'curl https://raw.githubusercontent.com/matthew-schultz/cassandra-cluster/master/cassandra.yaml > /etc/cassandra/cassandra.yaml'
+# sudo sh -c 'curl https://raw.githubusercontent.com/matthew-schultz/ICS421-FINAL/master/cassandra/cassandra.yaml > /etc/cassandra/cassandra.yaml'
 
