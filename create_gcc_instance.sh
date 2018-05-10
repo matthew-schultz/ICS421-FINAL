@@ -16,7 +16,7 @@ INSTANCE_NAME=$1
 # --image-project=debian-cloud --boot-disk-size=20GB --boot-disk-type=pd-standard \
 # --boot-disk-device-name=instance-1
 
-gcloud compute --project=ics-421-final instances create $INSTANCE_NAME \ 
+gcloud compute --project=ics-421-final instances create $INSTANCE_NAME \
 --zone=us-west1-a --machine-type=n1-standard-1 --subnet=default \
 --maintenance-policy=MIGRATE \
 --service-account=284864085858-compute@developer.gserviceaccount.com \
