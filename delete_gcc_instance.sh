@@ -1,3 +1,3 @@
-# !/bin/bash
+INSTANCE_NAME=$1
 
-gcloud compute instances delete instance-1 --quiet
+gcloud compute instances delete $INSTANCE_NAME --quiet
