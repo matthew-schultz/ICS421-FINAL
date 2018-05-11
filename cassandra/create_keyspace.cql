@@ -16,5 +16,18 @@ CREATE TABLE ics421.trade_stats (
   quantity_name VARCHAR,
   quantity VARCHAR,
   category VARCHAR,
-  primary key(country_or_area, trade_year)
+  primary key(country_or_area, trade_year, comm_code)
 );
+
+COPY ics421.trade_stats (country_or_area,
+  trade_year,
+  comm_code,
+  commodity,
+  flow,
+  trade_usd,
+  weight_kg,
+  quantity_name,
+  quantity,
+  category)
+FROM 'commodity_trade_statistics_data.csv'
+WITH DELIMITER = ',' AND HEADER=TRUE;
