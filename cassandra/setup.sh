@@ -1,7 +1,7 @@
 #install cassandra on a debian 9 google cloud instance and get cassandra config files from repository
 # curl https://raw.githubusercontent.com/matthew-schultz/ICS421-FINAL/master/cassandra/setup.sh | bash
-# curl https://raw.githubusercontent.com/matthew-schultz/ICS421-FINAL/master/cassandra/setup.sh | bash -s cassandra/cassandra.yaml
-# curl https://raw.githubusercontent.com/matthew-schultz/ICS421-FINAL/master/cassandra/setup.sh | bash -s /cassandra/10-138-0-3/cassandra.yaml
+# curl https://raw.githubusercontent.com/matthew-schultz/ICS421-FINAL/master/cassandra/setup.sh | bash -s -- cassandra/cassandra.yaml
+# curl https://raw.githubusercontent.com/matthew-schultz/ICS421-FINAL/master/cassandra/setup.sh | bash -s -- /cassandra/10-138-0-3/cassandra.yaml
 
 CASS_YAML=$1
 

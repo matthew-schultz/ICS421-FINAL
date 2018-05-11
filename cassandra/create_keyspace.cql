@@ -1,3 +1,5 @@
+tracing on;
+
 CREATE KEYSPACE IF NOT EXISTS ics421
   WITH REPLICATION = {
     'class': 'SimpleStrategy', 'replication_factor': '1'
@@ -11,8 +13,8 @@ CREATE TABLE ics421.trade_stats (
   comm_code VARCHAR,
   commodity VARCHAR,
   flow VARCHAR,
-  trade_usd BIGINT,
-  weight_kg BIGINT,
+  trade_usd DOUBLE,
+  weight_kg DOUBLE,
   quantity_name VARCHAR,
   quantity VARCHAR,
   category VARCHAR,
